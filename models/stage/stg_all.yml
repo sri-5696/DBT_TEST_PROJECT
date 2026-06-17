@@ -1,0 +1,121 @@
+models:
+  - name: stg_parts
+    description: ""
+    columns:
+      - name: part_id
+        data_type: varchar
+        description: ""
+
+      - name: part_name
+        data_type: varchar
+        description: ""
+
+      - name: part_category
+        data_type: varchar
+        description: ""
+
+      - name: machine_type
+        data_type: varchar
+        description: ""
+
+      - name: part_number
+        data_type: varchar
+        description: ""
+
+      - name: unit_of_measure
+        data_type: varchar
+        description: ""
+
+      - name: is_active
+        data_type: boolean
+        description: ""
+
+      - name: created_at
+        data_type: timestamp_ntz
+        description: ""
+
+      - name: updated_at
+        data_type: timestamp_ntz
+        description: ""
+
+  - name: stg_invoices
+    description: ""
+    columns:
+      - name: invoice_id
+        data_type: varchar
+        description: ""
+
+      - name: part_id
+        data_type: varchar
+        description: ""
+
+      - name: seller_id
+        data_type: varchar
+        description: ""
+
+      - name: invoice_date
+        data_type: date
+        description: ""
+
+      - name: qty_invoiced
+        data_type: number
+        description: ""
+
+      - name: unit_price
+        data_type: number
+        description: ""
+
+      - name: total_amount
+        data_type: number
+        description: ""
+
+      - name: currency
+        data_type: varchar
+        description: ""
+
+      - name: invoice_status
+        data_type: varchar
+        description: ""
+
+      - name: created_at
+        data_type: timestamp_ntz
+        description: ""
+
+  - name: stg_sellers
+    description: ""
+    columns:
+      - name: seller_id
+        data_type: varchar
+        description: ""
+
+      - name: seller_name
+        data_type: varchar
+        description: ""
+
+      - name: seller_type
+        data_type: varchar
+        description: ""
+
+      - name: full_name
+        data_type: varchar
+        description: ""
+
+      - name: country
+        data_type: varchar
+        description: ""
+
+      - name: contact_email
+        data_type: varchar
+        description: ""
+
+      - name: is_approved
+        data_type: boolean
+        description: ""
+
+      - name: onboarded_at
+        data_type: timestamp_ntz
+        description: ""
+
+      - name: updated_at
+        data_type: timestamp_ntz
+        description: ""

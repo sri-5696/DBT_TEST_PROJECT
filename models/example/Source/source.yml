@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: DBT_TEST
+    database: DBT_TEST
+    schema: DBT
+    tables:
+      - name: parts
+        description: "This table contains part information."
+      - name: sellers
+        description: "This table contains seller information."
+      - name: market_availability
+        description: "This table contains market availability information."
+      - name: invoices
+        description: "This table contains invoice information."
+      - name: purchase_orders
+        description: "This table contains purchase order information."
+      - name: part_prices
+        description: "This table contains part price information."
